@@ -18,7 +18,7 @@ sha512sums=('4b8e256e81af94c84b8b7b5e99dafc7b6ebff4b71d0e2cea149cc4c82921d07e1be
             '6cb41d1c331c379bf93edcc6733a28cbf2bd44b2a56b69ef6215bc918be7f20f7e7169deec1dc65dc3e55dabbe55ad477d5ac056bd7efc1193c7572aa0bcc27e'
             '3168e6cd690afb6cff1951658fbddf5ae30f3d8121067921dae59ca4f278c8497b9e88d2eafeb22fa0cca676c2d12384d9643b3a5c262b030a2f30c3edfb1f0e')
 
-build() {
+package () {
   mkdir -p $pkgdir/usr/share/texmf/tex/latex/jeb
 
   cp $srcdir/*.sty $pkgdir/usr/share/texmf/tex/latex/jeb
