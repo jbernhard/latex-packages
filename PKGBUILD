@@ -1,4 +1,4 @@
-pkgname=texlive-jeb
+pkgname=texlive-jbernhard
 pkgver=1.0
 pkgrel=1
 license=('MIT')
@@ -19,7 +19,9 @@ sha512sums=('4b8e256e81af94c84b8b7b5e99dafc7b6ebff4b71d0e2cea149cc4c82921d07e1be
             '3168e6cd690afb6cff1951658fbddf5ae30f3d8121067921dae59ca4f278c8497b9e88d2eafeb22fa0cca676c2d12384d9643b3a5c262b030a2f30c3edfb1f0e')
 
 package () {
-  mkdir -p $pkgdir/usr/share/texmf/tex/latex/jeb
+  destdir=$pkgdir/usr/share/texmf/tex/latex/jbernhard
 
-  cp $srcdir/*.sty $pkgdir/usr/share/texmf/tex/latex/jeb
+  mkdir -p $destdir
+
+  cp $srcdir/*.sty $destdir
 }
